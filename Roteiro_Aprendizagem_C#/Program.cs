@@ -27,12 +27,14 @@ namespace Roteiro_Aprendizagem_C_
 
             // Exercicio - Matrizes - Seu trabalho no departamento de segurança se concentra em encontrar um padrão para os pedidos fraudulentos.
 
-            string[] fraudulentOrderIDs = new string[3]; // declaração da matriz
+            /* string[] fraudulentOrderIDs = new string[3]; // declaração da matriz
 
             // adicionando valores aos elementos da matriz
             fraudulentOrderIDs[0] = "A123";
             fraudulentOrderIDs[1] = "B456";
-            fraudulentOrderIDs[2] = "C789";
+            fraudulentOrderIDs[2] = "C789"; */
+
+            string[] fraudulentOrderIDs = { "A123", "B456", "C789" };
 
             Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
             Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
