@@ -18,14 +18,29 @@ namespace Roteiro_Aprendizagem_C_
             Console.WriteLine("escape\nespecial"); // \n adicionará uma nova linha "quebra de linha"
             Console.WriteLine("escape\tespecial"); // \t adicionará um espaço a mais entre as palavras
 
-            Console.WriteLine("Hello \"World\"!"); // utilizando o \ entre uma palavra conseguimos usar as duplas dentro de uma string
+            Console.WriteLine("Hello \"World\"!\n"); // utilizando o \ entre uma palavra conseguimos usar as duplas dentro de uma string
+
+            ///////////////////////////////////////////
 
             // Introdução a Matrizes 
             // As matrizes podem ser usadas para armazenar vários valores do mesmo tipo em uma só variável.
 
             // Exercicio - Matrizes - Seu trabalho no departamento de segurança se concentra em encontrar um padrão para os pedidos fraudulentos.
 
-            string[] fraudulentOrderIDs = new string[3];
+            string[] fraudulentOrderIDs = new string[3]; // declaração da matriz
+
+            // adicionando valores aos elementos da matriz
+            fraudulentOrderIDs[0] = "A123";
+            fraudulentOrderIDs[1] = "B456";
+            fraudulentOrderIDs[2] = "C789";
+
+            Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
+            Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
+            Console.WriteLine($"Third: {fraudulentOrderIDs[2]}");
+
+            fraudulentOrderIDs[0] = "F000";
+
+            Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
 
             Console.ReadKey();
         }
