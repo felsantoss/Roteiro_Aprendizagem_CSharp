@@ -34,7 +34,7 @@ namespace Roteiro_Aprendizagem_C_
             fraudulentOrderIDs[1] = "B456";
             fraudulentOrderIDs[2] = "C789"; */
 
-            string[] fraudulentOrderIDs = { "A123", "B456", "C789" };
+            string[] fraudulentOrderIDs = { "A123", "B456", "C789" }; // declaração de matriz com valores já definidos
 
             Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
             Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
@@ -43,6 +43,26 @@ namespace Roteiro_Aprendizagem_C_
             fraudulentOrderIDs[0] = "F000";
 
             Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
+
+            Console.WriteLine($"There are {fraudulentOrderIDs.Length} fraudulent orders to process.\n");
+
+            // Implementar a instrução foreach
+            // foreach fornece uma maneira simples e limpa de iterar através dos elementos de uma matriz.
+
+            // Exercicio - foreach - Use a instrução foreach para criar uma soma de todos os itens disponíveis em cada compartimento do depósito.
+
+            int[] inventory = { 200, 450, 700, 175, 250 };
+
+            int sum = 0; // variavel para armazenar o valor da soma do array
+
+            foreach (int items in inventory)
+            {
+                sum += items; // adicionando o valor da soma total do array na variavel sum
+            }
+
+            Console.WriteLine($"We have {sum} items in inventory\n");
+
+
 
             Console.ReadKey();
         }
