@@ -20,6 +20,13 @@ namespace Roteiro_Aprendizagem_C_
 
             Console.WriteLine("Hello \"World\"!"); // utilizando o \ entre uma palavra conseguimos usar as duplas dentro de uma string
 
+            // Introdução a Matrizes 
+            // As matrizes podem ser usadas para armazenar vários valores do mesmo tipo em uma só variável.
+
+            // Exercicio - Matrizes - Seu trabalho no departamento de segurança se concentra em encontrar um padrão para os pedidos fraudulentos.
+
+            string[] fraudulentOrderIDs = new string[3];
+
             Console.ReadKey();
         }
 
