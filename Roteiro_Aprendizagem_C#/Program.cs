@@ -15,8 +15,10 @@ namespace Roteiro_Aprendizagem_C_
             // Adicionando Sequências de escape de caractere 
             // Uma sequência de caracteres de escape é uma instrução especial para que o runtime insira um caractere especial que afetará a saída da cadeia de caracteres.
 
-            Console.WriteLine("escape\nespecial"); // \n adicionára uma nova linha 
-            Console.WriteLine("escape\tespecial");
+            Console.WriteLine("escape\nespecial"); // \n adicionará uma nova linha "quebra de linha"
+            Console.WriteLine("escape\tespecial"); // \t adicionará um espaço a mais entre as palavras
+
+            Console.WriteLine("Hello \"World\"!"); // utilizando o \ entre uma palavra conseguimos usar as duplas dentro de uma string
 
             Console.ReadKey();
         }
