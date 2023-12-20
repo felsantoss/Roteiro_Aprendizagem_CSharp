@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roteiro_Aprendizagem_C#", "Roteiro_Aprendizagem_C#\Roteiro_Aprendizagem_C#.csproj", "{2E7C023B-8984-414F-BD83-F44D56DE68BE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parte1", "Parte1", "{3DF35C23-D2E1-4B64-89A1-6593C268B41F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Roteiro Aprendizagem C#", "Roteiro Aprendizagem C#", "{3DF35C23-D2E1-4B64-89A1-6593C268B41F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MiniProject", "MiniProject", "{4DA40CED-61CF-4BFA-A7CF-6B241ADBD04B}"
 EndProject
