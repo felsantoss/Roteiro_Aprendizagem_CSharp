@@ -43,6 +43,12 @@ namespace Roteiro_Parte_2
             
             Console.WriteLine($"\nDiscount: {(saleAmount > 1000 ? 100 : 50)}");
 
+            Random number = new Random();
+
+            int flip = number.Next(0, 2);
+
+            Console.WriteLine((flip == 0) ? "heads" : "tails");
+
             Console.WriteLine("\nPress any key to close");
             Console.ReadKey();
         }
