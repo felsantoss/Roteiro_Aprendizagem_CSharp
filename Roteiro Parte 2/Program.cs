@@ -47,7 +47,27 @@ namespace Roteiro_Parte_2
 
             int flip = number.Next(0, 2);
 
-            Console.WriteLine((flip == 0) ? "heads" : "tails");
+            Console.WriteLine((flip == 0) ? "heads" : "tails\n");
+
+
+            string permission = "Manager";
+            int level = 1;
+
+            if (permission.Contains("Admin") && level > 55)
+                Console.WriteLine("Welcome, Super Admin user.");
+
+            else if (permission.Contains("Admin") && level <= 55)
+                Console.WriteLine("Welcome, Admin user.");
+
+            else if (permission.Contains("Manager") && level >= 20)
+                Console.WriteLine("Contact an Admin for access.");
+
+            else if (permission.Contains("Manager") && level < 20)
+                Console.WriteLine("You do not have sufficient privileges.");
+
+            else
+                Console.WriteLine("You do not have sufficient privileges.");
+
 
             Console.WriteLine("\nPress any key to close");
             Console.ReadKey();
