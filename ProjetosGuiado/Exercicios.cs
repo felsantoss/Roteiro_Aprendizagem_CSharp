@@ -31,7 +31,7 @@ namespace ProjetosGuiado
             string currentStudentLetterGrade = "";
 
             // Write the Report Header to the console
-            Console.WriteLine("Student\t\tGrade\tLetter Grade\n");
+            Console.WriteLine("Student\t\tExam Score\tOverall\tGrade\tExtra Credit\n");
 
             foreach (string name in studentNames)
             {
@@ -133,7 +133,7 @@ namespace ProjetosGuiado
                     currentStudentLetterGrade = "F";
 
 
-                Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t{currentStudentLetterGrade}");
+                Console.WriteLine($"{currentStudent}\t\t\t\t{currentStudentGrade}\t{currentStudentLetterGrade}");
 
             }
 
