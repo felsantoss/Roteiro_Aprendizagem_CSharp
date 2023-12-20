@@ -12,23 +12,23 @@ namespace Roteiro_Parte_2
     {
         static void Main(string[] args)
         {
-            string value1 = " a";
-            string value2 = "A ";
+            //string value1 = " a";
+            //string value2 = "A ";
 
-            Console.WriteLine(value1.Trim().ToLower() == value2.Trim().ToLower());
+            //Console.WriteLine(value1.Trim().ToLower() == value2.Trim().ToLower());
 
-            Console.WriteLine("a" != "a");
-            Console.WriteLine("a" != "A");
-            Console.WriteLine(1 != 2);
+            //Console.WriteLine("a" != "a");
+            //Console.WriteLine("a" != "A");
+            //Console.WriteLine(1 != 2);
 
-            string myValue = "a";
+            //string myValue = "a";
 
-            Console.WriteLine(myValue != "a");
+            //Console.WriteLine(myValue != "a");
 
-            Console.WriteLine(1 > 2);
-            Console.WriteLine(1 < 2);
-            Console.WriteLine(1 >= 1);
-            Console.WriteLine(1 <= 1);  
+            //Console.WriteLine(1 > 2);
+            //Console.WriteLine(1 < 2);
+            //Console.WriteLine(1 >= 1);
+            //Console.WriteLine(1 <= 1);  
 
             string pangram = "The quick brown fox jumps over the lazy dog.";
 
@@ -43,12 +43,16 @@ namespace Roteiro_Parte_2
             
             Console.WriteLine($"\nDiscount: {(saleAmount > 1000 ? 100 : 50)}");
 
+            Console.WriteLine("\nChallenger of heads and tails\n");
+
             Random number = new Random();
 
             int flip = number.Next(0, 2);
 
             Console.WriteLine((flip == 0) ? "heads" : "tails\n");
 
+
+            Console.WriteLine("\nChallenger of user\n");
 
             string permission = "Manager";
             int level = 1;
@@ -68,6 +72,28 @@ namespace Roteiro_Parte_2
             else
                 Console.WriteLine("You do not have sufficient privileges.");
 
+
+            Console.WriteLine("\nScope of variable\n");
+
+            bool flag = true;
+            int value = 0;
+
+            if (flag)
+            {
+                value = 10;
+                Console.WriteLine($"Inside of code block: " + value);
+            }
+
+            Console.WriteLine($"Outside of code block: {value}");
+
+            string name = "steve";
+
+            if (name == "bob")
+                Console.WriteLine("Found Bob");
+            else if (name == "steve")
+                Console.WriteLine("Found Steve");
+            else
+                Console.WriteLine("Found Chuck");
 
             Console.WriteLine("\nPress any key to close");
             Console.ReadKey();
