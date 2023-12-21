@@ -118,7 +118,9 @@ namespace Roteiro_Parte_2
 
             Console.WriteLine($"Total: {total}\n");
 
-            int employeeLevel = 1000;
+            // implementando condição switch case
+
+            int employeeLevel = 400;
             string employeeName = "John Smith";
 
             string title = "";
@@ -126,8 +128,6 @@ namespace Roteiro_Parte_2
             switch (employeeLevel)
             {
                 case 100:
-                    title = "Junior Associate";
-                    break;
                 case 200:
                     title = "Senior Associate";
                     break;
