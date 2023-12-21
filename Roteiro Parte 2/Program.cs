@@ -90,8 +90,11 @@ namespace Roteiro_Parte_2
 
             if (name == "bob")
                 Console.WriteLine("Found Bob");
+
             else if (name == "steve")
                 Console.WriteLine("Found Steve");
+
+            
             else
                 Console.WriteLine("Found Chuck");
 
@@ -113,7 +116,25 @@ namespace Roteiro_Parte_2
             if (found)
                 Console.WriteLine("Set contains 42");            
 
-            Console.WriteLine($"Total: {total}");
+            Console.WriteLine($"Total: {total}\n");
+
+
+            string fruit = "";
+
+            switch(fruit)
+            {
+                case "apple":
+                    Console.WriteLine($"App will display information for apple.");
+                    break;
+
+                case "banana":
+                    Console.WriteLine($"App will display information for banana.");
+                    break;
+
+                case "cherry":
+                    Console.WriteLine($"App will display information for cherry.");
+                    break;
+            }
 
             Console.WriteLine("\nPress any key to close");
             Console.ReadKey();
