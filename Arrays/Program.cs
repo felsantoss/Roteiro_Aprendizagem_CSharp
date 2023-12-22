@@ -71,11 +71,24 @@ namespace Arrays
 
                 // Console.WriteLine(squareNumbers[i]);
             }
-
+            // Imprimindo usando for each
             foreach (int square in squareNumbers)
             {
                 Console.WriteLine(square);  
             }
+
+            int length = 0;
+
+            for (int i = 0; i < 10; i++)
+            {
+                squareNumbers[i] = i * i;
+                length++;
+            }
+
+            int capacity = squareNumbers.Length; 
+
+            Console.WriteLine($"The Array has a capacity of {capacity}");
+            Console.WriteLine($"The Array has a length of {length}");
 
             Console.ReadKey();
 
