@@ -58,6 +58,19 @@ namespace Arrays
             Console.WriteLine(dvdCollection[2].ToString());
             Console.WriteLine(dvdCollection[3].ToString());
 
+            int[] squareNumbers = new int[10];
+
+            for (int i = 0; i < 10; i++)
+            {
+                // We need to be careful with the 0-indexing. The next square number
+                // is given by (i + 1) * (i + 1)
+                // Calculate it and insert it into the Array at index i.
+                int square = (i + 1) * (i + 1);
+                squareNumbers[i] = square;
+
+                Console.WriteLine(squareNumbers[i]);
+            }
+
             Console.ReadKey();
 
         }
