@@ -58,6 +58,7 @@ namespace Arrays
             Console.WriteLine(dvdCollection[2].ToString());
             Console.WriteLine(dvdCollection[3].ToString());
 
+            // Número quadrado é um número que ao extrair a raiz quadrada, o resultado é exato. 
             int[] squareNumbers = new int[10];
 
             for (int i = 0; i < 10; i++)
@@ -68,7 +69,12 @@ namespace Arrays
                 int square = (i + 1) * (i + 1);
                 squareNumbers[i] = square;
 
-                Console.WriteLine(squareNumbers[i]);
+                // Console.WriteLine(squareNumbers[i]);
+            }
+
+            foreach (int square in squareNumbers)
+            {
+                Console.WriteLine(square);  
             }
 
             Console.ReadKey();
