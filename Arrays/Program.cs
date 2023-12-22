@@ -58,6 +58,12 @@ namespace Arrays
             Console.WriteLine(dvdCollection[2].ToString());
             Console.WriteLine(dvdCollection[3].ToString());
 
+            int dvdLength = dvdCollection.Length;
+
+            Console.WriteLine(dvdLength);
+
+
+
             // Número quadrado é um número que ao extrair a raiz quadrada, o resultado é exato. 
             int[] squareNumbers = new int[10];
 
@@ -79,6 +85,7 @@ namespace Arrays
 
             int length = 0;
 
+            // verificar quantos itens existem dentro de um array 
             for (int i = 0; i < 10; i++)
             {
                 squareNumbers[i] = i * i;
