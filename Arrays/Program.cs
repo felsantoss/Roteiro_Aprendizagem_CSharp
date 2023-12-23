@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -29,6 +30,16 @@ namespace Arrays
 
         }
 
+        //public int findMaxConsecutiveOnes(int[] nums)
+        //{
+        //    // Hint: Initialise and declare a variable here to 
+        //    // keep track of how many 1's you've seen in a row.
+
+        //    for (int i = 0; i < nums.Length; i++)
+        //    {
+
+        //    }
+        //}
 
         static void Main(string[] args)
         {
@@ -58,12 +69,6 @@ namespace Arrays
             Console.WriteLine(dvdCollection[2].ToString());
             Console.WriteLine(dvdCollection[3].ToString());
 
-            int dvdLength = dvdCollection.Length;
-
-            Console.WriteLine(dvdLength);
-
-
-
             // Número quadrado é um número que ao extrair a raiz quadrada, o resultado é exato. 
             int[] squareNumbers = new int[10];
 
@@ -92,10 +97,23 @@ namespace Arrays
                 length++;
             }
 
-            int capacity = squareNumbers.Length; 
+            int capacity = squareNumbers.Length;
 
-            Console.WriteLine($"The Array has a capacity of {capacity}");
-            Console.WriteLine($"The Array has a length of {length}");
+            int[] array = new int[6];
+
+            int lengthArr = 0;
+
+            for (int i = 0; i < 3; i++)
+            {
+                array[i] = i * i;
+                lengthArr++;
+            }
+
+            Console.WriteLine($"Array capacityy is " + array.Length);
+            Console.WriteLine($"Array length is {lengthArr}");
+
+            //Console.WriteLine($"The Array has a capacity of {capacity}");
+            //Console.WriteLine($"The Array has a length of {length}");
 
             Console.ReadKey();
 
