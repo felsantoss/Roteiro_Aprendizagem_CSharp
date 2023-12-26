@@ -273,13 +273,12 @@ namespace Roteiro_Parte_2
             Console.WriteLine("\nExample of do-while");
 
             Random random = new Random();            
-            int damage = random.Next(1, 10);
 
             int heroLife = 10, monsterLife = 10;
 
             do
             {
-                damage = random.Next(1, 10);
+                int damage = random.Next(1, 10);
                 monsterLife -= damage;
                 
                 Console.WriteLine($"Hero Atack! Monster has damage and lost {damage} health and now has {monsterLife} health.");
@@ -293,7 +292,9 @@ namespace Roteiro_Parte_2
                 Console.WriteLine($"Monster Atack! Hero has damage and lost {damage} health and now has {heroLife} health."); 
                 
 
-            } while (monsterLife > 0 || heroLife > 0);
+            } while (heroLife > 0 && monsterLife > 0);
+
+            Console.WriteLine(heroLife > monsterLife ? "Hero Wins!" : "Monster Wins!");
 
 
             //do
