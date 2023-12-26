@@ -216,9 +216,11 @@ namespace Roteiro_Parte_2
             // Instruções função FOR
             // as tres partes do FOR - for (inicializador; conclusão; ação a ser executada a cada iteração) 
 
-            for (int i = 0; i < 10; i += 2)
+            for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine(i);
+                if (i == 7)
+                    break;
             }
 
             Console.WriteLine("\nPress any key to close");
