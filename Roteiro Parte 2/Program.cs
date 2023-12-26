@@ -37,13 +37,15 @@ namespace Roteiro_Parte_2
             Console.WriteLine(pangram.Contains("fox"));
             Console.WriteLine(!pangram.Contains("cow"));
 
+            Console.WriteLine("\nOperation Condition ? :\n");
+
             // operador condicional ?: 
             // <evaluate this condition> ? <if condition is true, return this value> : <if condition is false, return this value>
 
             int saleAmount = 1001;
             // int discount = saleAmount > 1000 ? 100 : 50;
             
-            Console.WriteLine($"\nDiscount: {(saleAmount > 1000 ? 100 : 50)}");
+            Console.WriteLine($"Discount: {(saleAmount > 1000 ? 100 : 50)}");
 
             Console.WriteLine("\nChallenger of heads and tails\n");
 
@@ -213,27 +215,31 @@ namespace Roteiro_Parte_2
           
             Console.WriteLine($"Product: {size} {color} {type}\n");
 
+            Console.WriteLine("\nExample of FOR\n");
+
             // Instruções função FOR
             // as tres partes do FOR - for (inicializador; conclusão; ação a ser executada a cada iteração) 
 
             string[] names = { "Alex", "Eddie", "David", "Michael" };
 
-            //for (int i = 0; i < names.Length; i++)
-            //{
-            //    if (names[i] == "David")
-            //    {
-            //        names[i] = "Sammy";
-            //    }
+            for (int i = 0; i < names.Length; i++)
+            {
+                if (names[i] == "David")
+                {
+                    names[i] = "Sammy";
+                }
                     
-            //}
+            }
 
-            //foreach (var nami in names)
-            //{
-            //    Console.WriteLine(nami);
-            //}
+            foreach (var nami in names)
+            {
+                Console.WriteLine(nami);
+            }
+
+            Console.WriteLine("\nFizzBuzz\n");
             
             // fizz buzz
-            for (int i = 1; i < 20; i++)
+            for (int i = 1; i < 10; i++)
             {
                 if (i % 5 == 0 && i % 3 == 0)
                     Console.WriteLine(i + " - FizzBuzz");
@@ -248,6 +254,32 @@ namespace Roteiro_Parte_2
                     Console.WriteLine(i);
 
             }
+
+            Console.WriteLine("\nNumbers of digits");
+
+            int numbersS = 9;
+            int count = 0;
+
+            while (numbersS != 0)
+            {
+                numbersS = numbersS / 10;
+                count++;
+            }
+
+            Console.WriteLine($"\nTotal digits: {count}");
+
+            // Instrução do-while
+
+            Console.WriteLine("\nExample of do-while");
+
+            Random random = new Random();
+            int current = 0;
+
+            do
+            {
+                current = random.Next(1, 11);
+                Console.WriteLine(current);
+            } while (current != 7);
 
             Console.WriteLine("\nPress any key to close");
             Console.ReadKey();
