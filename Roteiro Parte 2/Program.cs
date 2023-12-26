@@ -214,8 +214,9 @@ namespace Roteiro_Parte_2
             Console.WriteLine($"Product: {size} {color} {type}");
 
             // Instruções função FOR
+            // as tres partes do FOR - for (inicializador; conclusão; ação a ser executada a cada iteração) 
 
-            for (int i = 0; i <= 19; i++)
+            for (int i = 10; i >= 0; i--)
             {
                 Console.WriteLine(i);
             }
