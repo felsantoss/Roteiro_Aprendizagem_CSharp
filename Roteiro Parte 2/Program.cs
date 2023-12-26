@@ -216,18 +216,37 @@ namespace Roteiro_Parte_2
             // Instruções função FOR
             // as tres partes do FOR - for (inicializador; conclusão; ação a ser executada a cada iteração) 
 
-            //string[] names = { "Alex", "Eddie", "David", "Michael" };
+            string[] names = { "Alex", "Eddie", "David", "Michael" };
 
-            //for (int i = names.Length - 1; i >= 0; i--)
+            //for (int i = 0; i < names.Length; i++)
             //{
-            //    Console.WriteLine(names[i]);
+            //    if (names[i] == "David")
+            //    {
+            //        names[i] = "Sammy";
+            //    }
+                    
             //}
 
-            string[] names = { "Alex", "Eddie", "David", "Michael" };
-            foreach (var nami in names)
+            //foreach (var nami in names)
+            //{
+            //    Console.WriteLine(nami);
+            //}
+            
+            // fizz buzz
+            for (int i = 1; i < 20; i++)
             {
-                // Can't do this:
-                if (name == "David") nami = "Sammy";
+                if (i % 5 == 0 && i % 3 == 0)
+                    Console.WriteLine(i + " - FizzBuzz");
+
+                else if (i % 5 == 0)
+                    Console.WriteLine(i + " - Buzz");
+
+                else if (i % 3 == 0)
+                    Console.WriteLine(i + " - Fizz");
+
+                else
+                    Console.WriteLine(i);
+
             }
 
             Console.WriteLine("\nPress any key to close");
