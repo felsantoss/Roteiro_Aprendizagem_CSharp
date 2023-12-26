@@ -272,19 +272,40 @@ namespace Roteiro_Parte_2
 
             Console.WriteLine("\nExample of do-while");
 
-            Random random = new Random();
-            int current = random.Next(1, 11);
+            Random random = new Random();            
+            int damage = random.Next(1, 10);
+
+            int heroLife = 10, monsterLife = 10;
 
             do
             {
-                current = random.Next(1, 11);
+                damage = random.Next(1, 10);
+                monsterLife -= damage;
+                
+                Console.WriteLine($"Hero Atack! Monster has damage and lost {damage} health and now has {monsterLife} health.");
 
-                if (current >= 8)
+                if (monsterLife <= 0)
                     continue;
 
-                Console.WriteLine(current);
-            } 
-            while (current != 7);
+                damage = random.Next(1, 10);
+                heroLife -= damage;
+
+                Console.WriteLine($"Monster Atack! Hero has damage and lost {damage} health and now has {heroLife} health."); 
+                
+
+            } while (monsterLife > 0 || heroLife > 0);
+
+
+            //do
+            //{
+            //    current = random.Next(1, 11);
+
+            //    if (current >= 8)
+            //        continue;
+
+            //    Console.WriteLine(current);
+            //} 
+            //while (current != 7);
 
 
 
