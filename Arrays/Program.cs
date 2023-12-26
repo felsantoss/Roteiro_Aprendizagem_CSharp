@@ -30,19 +30,9 @@ namespace Arrays
 
         }
 
-        //public int findMaxConsecutiveOnes(int[] nums)
-        //{
-        //    // Hint: Initialise and declare a variable here to 
-        //    // keep track of how many 1's you've seen in a row.
-
-        //    for (int i = 0; i < nums.Length; i++)
-        //    {
-
-        //    }
-        //}
-
         static void Main(string[] args)
         {
+
             DVD[] dvdCollection = new DVD[15];
             
             DVD avengersDVD = new DVD("The Avengers", 2012, "Joss Whedon");
@@ -99,8 +89,8 @@ namespace Arrays
 
             int capacity = squareNumbers.Length;
 
+            // exemplo de capacity e length
             int[] array = new int[6];
-
             int lengthArr = 0;
 
             for (int i = 0; i < 3; i++)
@@ -110,10 +100,35 @@ namespace Arrays
             }
 
             Console.WriteLine($"Array capacityy is " + array.Length);
-            Console.WriteLine($"Array length is {lengthArr}");
+            Console.WriteLine($"Array length is {lengthArr}\n");
 
-            //Console.WriteLine($"The Array has a capacity of {capacity}");
-            //Console.WriteLine($"The Array has a length of {length}");
+            // Given a binary array nums, return the maximum number of consecutive 1's in the array.
+            int[] numsArr = { 1, 0, 1, 1, 0, 1 };
+
+            int findMaxConsecutiveOnes(int[] nums)
+            {
+                int numsOfConsecutiveOnes = 0;
+                int numOfMaxCount = 0;
+
+                // keep track of how many 1's you've seen in a row.
+                for (int i = 0; i < nums.Length; i++)
+                {
+                    if (nums[i] == 1)
+                    {
+                        numsOfConsecutiveOnes++;
+                    }
+                    else
+                    {
+                        numsOfConsecutiveOnes = 0;
+                    }
+
+                    numOfMaxCount = Math.Max(numOfMaxCount, numsOfConsecutiveOnes);
+                }
+
+                return numOfMaxCount;
+            }
+
+            Console.WriteLine(findMaxConsecutiveOnes(numsArr));
 
             Console.ReadKey();
 
