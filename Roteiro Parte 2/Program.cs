@@ -211,16 +211,23 @@ namespace Roteiro_Parte_2
             }
             
           
-            Console.WriteLine($"Product: {size} {color} {type}");
+            Console.WriteLine($"Product: {size} {color} {type}\n");
 
             // Instruções função FOR
             // as tres partes do FOR - for (inicializador; conclusão; ação a ser executada a cada iteração) 
 
-            for (int i = 0; i < 10; i++)
+            //string[] names = { "Alex", "Eddie", "David", "Michael" };
+
+            //for (int i = names.Length - 1; i >= 0; i--)
+            //{
+            //    Console.WriteLine(names[i]);
+            //}
+
+            string[] names = { "Alex", "Eddie", "David", "Michael" };
+            foreach (var nami in names)
             {
-                Console.WriteLine(i);
-                if (i == 7)
-                    break;
+                // Can't do this:
+                if (name == "David") nami = "Sammy";
             }
 
             Console.WriteLine("\nPress any key to close");
