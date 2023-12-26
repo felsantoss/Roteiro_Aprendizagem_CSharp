@@ -213,6 +213,13 @@ namespace Roteiro_Parte_2
           
             Console.WriteLine($"Product: {size} {color} {type}");
 
+            // Instruções função FOR
+
+            for (int i = 0; i <= 19; i++)
+            {
+                Console.WriteLine(i);
+            }
+
             Console.WriteLine("\nPress any key to close");
             Console.ReadKey();
         }
