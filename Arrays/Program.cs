@@ -102,34 +102,7 @@ namespace Arrays
             Console.WriteLine($"Array capacityy is " + array.Length);
             Console.WriteLine($"Array length is {lengthArr}\n");
 
-            // Given a binary array nums, return the maximum number of consecutive 1's in the array.
-            int[] numsArr = { 1, 0, 1, 1, 0, 1 };
-
-            int findMaxConsecutiveOnes(int[] nums)
-            {
-                int numsOfConsecutiveOnes = 0;
-                int numOfMaxCount = 0;
-
-                // keep track of how many 1's you've seen in a row.
-                for (int i = 0; i < nums.Length; i++)
-                {
-                    if (nums[i] == 1)
-                    {
-                        numsOfConsecutiveOnes++;
-                    }
-                    else
-                    {
-                        numsOfConsecutiveOnes = 0;
-                    }
-
-                    numOfMaxCount = Math.Max(numOfMaxCount, numsOfConsecutiveOnes);
-                }
-
-                return numOfMaxCount;
-            }
-
-            Console.WriteLine(findMaxConsecutiveOnes(numsArr));
-
+           
             Console.ReadKey();
 
         }
