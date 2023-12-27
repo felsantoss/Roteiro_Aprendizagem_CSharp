@@ -297,6 +297,19 @@ namespace Roteiro_Parte_2
             Console.WriteLine(heroLife > monsterLife ? "Hero Wins!" : "Monster Wins!");
 
 
+            // Desafio técnico 1 - escrever o código que valida a entrada de inteiro
+
+            Console.WriteLine("\nChallenger 1 - Validate input of an integer");
+
+            string? readResult;
+
+            Console.WriteLine("Enter an integer value between 5 and 10");
+            do
+            {
+                readResult = Console.ReadLine();
+
+            } while (readResult == null);
+
             //do
             //{
             //    current = random.Next(1, 11);
