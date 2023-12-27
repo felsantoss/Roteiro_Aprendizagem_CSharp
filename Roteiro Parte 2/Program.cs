@@ -302,34 +302,39 @@ namespace Roteiro_Parte_2
             Console.WriteLine("\nChallenger 1 - Validate input of an integer");
 
             string? readResult;
+            string valueEntered = "";
+            int numValue = 0;
+            bool validNumber = false;
 
             Console.WriteLine("Enter an integer value between 5 and 10");
+
             do
             {
                 readResult = Console.ReadLine();
+                if (readResult != null)
+                {
+                    valueEntered = readResult;
+                }
 
-            } while (readResult == null);
+                validNumber = int.TryParse(valueEntered, out numValue);
 
-            //do
-            //{
-            //    current = random.Next(1, 11);
+                if (validNumber == true)
+                {
+                    if (numValue <= 5 || numValue >= 10)
+                    {
+                        validNumber = false;
+                        Console.WriteLine($"You entered {numValue}. Please enter a number between 5 and 10.");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Sorry, you entered an invalid number, please try again");
+                }
+            } while (validNumber == false);
 
-            //    if (current >= 8)
-            //        continue;
+            Console.WriteLine($"Your input value ({numValue}) has been accepted.");
 
-            //    Console.WriteLine(current);
-            //} 
-            //while (current != 7);
-
-
-
-            //while (current >= 3)
-            //{
-            //    Console.WriteLine(current);
-            //    current = random.Next(1, 11);
-            //}
-
-            //Console.WriteLine($"Last number: {current}");
+            readResult = Console.ReadLine();
 
             Console.WriteLine("\nPress any key to close");
             Console.ReadKey();
