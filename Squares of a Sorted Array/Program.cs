@@ -15,18 +15,14 @@ namespace Squares_of_a_Sorted_Array
 
             int[] SortedSquares(int[] nums)
             {
-                int[] newArray = new int[nums.Length];
-
                 for (int i = 0; i < nums.Length; i++)
                 {
-                    int newNumber = nums[i] * nums[i];
-
-                    newArray[i] = newNumber;
+                    nums[i] = nums[i] * nums[i];
                 }
 
-                int[] arraySorted = newArray.OrderBy(i => i).ToArray();
+                Array.Sort(nums);
 
-                return arraySorted;
+                return nums;
             }
 
             int[] arr = { -7, -3, 2, 3, 11 };
