@@ -102,7 +102,54 @@ namespace Arrays
             Console.WriteLine($"Array capacityy is " + array.Length);
             Console.WriteLine($"Array length is {lengthArr}\n");
 
-           
+            Console.Clear();
+
+            // Declare an integer array of 6 elements
+            int[] intArr = new int[6];
+            int lengthIntArr = 0;
+
+            // Add 3 elements to the Array
+            for (int i = 0; i < 3; i++)
+            {
+                intArr[lengthIntArr] = i;
+                lengthIntArr++;
+            }
+
+            // Insert a new element at the end of the Array. Again,. Again,
+            intArr[lengthIntArr] = 10;
+            lengthIntArr++;
+
+            // Insert a new element at the start of the Array. Again,
+
+            // First, we will have to create space for a new element.
+            // We do that by shifting each element one index to the right.
+            // This will firstly move the element at index 3, then 2, then 1, then finally 0.
+            // We need to go backwards to avoid overwriting any elements.
+            for (int i = 3; i >= 0; i--)
+            {
+                intArr[i + 1] = intArr[i];
+            }
+
+            intArr[0] = 20;
+
+            // Say we want to insert the element at index 2.
+            // Firts, we will have to create space for the new element.
+            for (int i = 4; i >= 2; i--)
+            {
+                // Shift each element one position to the right
+                intArr[i + 1] = intArr[i];
+            }
+
+            // Now that we created space for the new element,
+            // we can insert it at the required index.
+            intArr[2] = 30;
+
+
+            for (int i = 0; i < intArr.Length; i++)
+            {
+                Console.WriteLine("Index " + i + " contais " + intArr[i]);
+            }
+
             Console.ReadKey();
 
         }
