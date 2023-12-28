@@ -33,6 +33,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxConsecutiveOnes", "MaxCo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Introdution to Array", "Introdution to Array", "{A65B3019-A592-48B5-887A-9F7ED75E87ED}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Find Numbers with Even Number of Digits", "Find Numbers with Even Number of Digits", "{F7F624EF-627D-47C8-BF63-296632058293}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find Numbers with Even Number of Digits", "Find Numbers with Even Number of Digits\Find Numbers with Even Number of Digits.csproj", "{EC121195-8116-4B14-B85D-B4CCD138633F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Squares of a Sorted Array", "Squares of a Sorted Array", "{29FADBF2-F3B7-46B4-B018-F31E23970DFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Squares of a Sorted Array", "Squares of a Sorted Array\Squares of a Sorted Array.csproj", "{43339CCC-CD30-4542-BB5A-B3A21B2C2380}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +71,14 @@ Global
 		{366E015C-458F-4652-B93D-00CEDCBBA420}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{366E015C-458F-4652-B93D-00CEDCBBA420}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{366E015C-458F-4652-B93D-00CEDCBBA420}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC121195-8116-4B14-B85D-B4CCD138633F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC121195-8116-4B14-B85D-B4CCD138633F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC121195-8116-4B14-B85D-B4CCD138633F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC121195-8116-4B14-B85D-B4CCD138633F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43339CCC-CD30-4542-BB5A-B3A21B2C2380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43339CCC-CD30-4542-BB5A-B3A21B2C2380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43339CCC-CD30-4542-BB5A-B3A21B2C2380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43339CCC-CD30-4542-BB5A-B3A21B2C2380}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +95,10 @@ Global
 		{FDB8F156-025A-4012-8CDB-09B9CA4297BE} = {91B7C598-6F30-45BE-964D-7F13565B0F06}
 		{366E015C-458F-4652-B93D-00CEDCBBA420} = {FDB8F156-025A-4012-8CDB-09B9CA4297BE}
 		{A65B3019-A592-48B5-887A-9F7ED75E87ED} = {91B7C598-6F30-45BE-964D-7F13565B0F06}
+		{F7F624EF-627D-47C8-BF63-296632058293} = {91B7C598-6F30-45BE-964D-7F13565B0F06}
+		{EC121195-8116-4B14-B85D-B4CCD138633F} = {F7F624EF-627D-47C8-BF63-296632058293}
+		{29FADBF2-F3B7-46B4-B018-F31E23970DFB} = {91B7C598-6F30-45BE-964D-7F13565B0F06}
+		{43339CCC-CD30-4542-BB5A-B3A21B2C2380} = {29FADBF2-F3B7-46B4-B018-F31E23970DFB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {652280E7-4E9C-4110-BD5B-351BF708D9EF}
