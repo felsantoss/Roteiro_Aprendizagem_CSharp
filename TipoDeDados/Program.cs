@@ -10,7 +10,7 @@ namespace TipoDeDados
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Signed integral types:");
+            Console.WriteLine("Tipo integral com sinal:");
 
             Console.WriteLine($"sbyte  : {sbyte.MinValue} to {sbyte.MaxValue}");
             Console.WriteLine($"short  : {short.MinValue} to {short.MaxValue}");
