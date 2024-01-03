@@ -25,6 +25,13 @@ namespace TipoDeDados
             Console.WriteLine($"uint   : {uint.MinValue} to {uint.MaxValue}");
             Console.WriteLine($"ulong  : {ulong.MinValue} to {ulong.MaxValue}");
 
+            Console.WriteLine("");
+            Console.WriteLine("Tipo ponto flutuante");
+
+            Console.WriteLine($"float  : {float.MinValue} to {float.MaxValue}");
+            Console.WriteLine($"double : {double.MinValue} to {double.MaxValue}");
+            Console.WriteLine($"decimal: {decimal.MinValue} to {decimal.MaxValue}");
+
             Console.ReadKey();
         }
     }
