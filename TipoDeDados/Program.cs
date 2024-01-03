@@ -10,6 +10,8 @@ namespace TipoDeDados
     {
         static void Main(string[] args)
         {
+            // Tipos de valores
+
             Console.WriteLine("Tipo integral com sinal:");
 
             Console.WriteLine($"sbyte  : {sbyte.MinValue} to {sbyte.MaxValue}");
@@ -30,7 +32,11 @@ namespace TipoDeDados
 
             Console.WriteLine($"float  : {float.MinValue} to {float.MaxValue}");
             Console.WriteLine($"double : {double.MinValue} to {double.MaxValue}");
-            Console.WriteLine($"decimal: {decimal.MinValue} to {decimal.MaxValue}");
+            Console.WriteLine($"decimal: {decimal.MinValue} to {decimal.MaxValue}"); 
+
+            // Tipos de referencias Ex: Matrizes, classes e cadeia de caracteres
+
+            int[] data = new int[3];
 
             Console.ReadKey();
         }
