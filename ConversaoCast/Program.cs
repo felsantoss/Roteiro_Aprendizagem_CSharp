@@ -52,11 +52,23 @@ namespace ConversaoCast
             int sum = int.Parse(first) + int.Parse(second);
             Console.WriteLine(sum); */
 
-            Console.WriteLine("\nConversão utilizando a classe Convert");
+            /* Você usou o método Convert.ToInt32() com uma cadeia de caracteres aqui, 
+             * mas provavelmente deve usar TryParse() quando possível.
+             * Então, quando usar a classe Convert? A classe Convert é melhor para converter números fracionários em números inteiros (int) 
+             * porque os arredonda da maneira esperada.
+             */
+
+            /* Console.WriteLine("\nConversão utilizando a classe Convert");
             string value1 = "5";
             string value2 = "7";
             int result = Convert.ToInt32(value1) * Convert.ToInt32(value2);
-            Console.WriteLine(result);
+            Console.WriteLine(result); */
+
+            int value = (int)1.5m; // casting truncates
+            Console.WriteLine(value);
+
+            int value1 = Convert.ToInt32(1.5m); // casting rounds up
+            Console.WriteLine(value1);
 
 
             Console.ReadKey();
