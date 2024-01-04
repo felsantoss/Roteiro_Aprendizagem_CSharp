@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,14 +44,19 @@ namespace ConversaoCast
             int second = 7;
             string message = first.ToString() + second.ToString();
 
-            Console.WriteLine(message); */
+            Console.WriteLine(message); 
 
             Console.WriteLine("\nConvertendo String em Int usando Parse()");
             string first = "5";
             string second = "7";
             int sum = int.Parse(first) + int.Parse(second);
+            Console.WriteLine(sum); */
 
-            Console.WriteLine(sum);
+            Console.WriteLine("\nConversão utilizando a classe Convert");
+            string value1 = "5";
+            string value2 = "7";
+            int result = Convert.ToInt32(value1) * Convert.ToInt32(value2);
+            Console.WriteLine(result);
 
 
             Console.ReadKey();
