@@ -70,7 +70,7 @@ namespace ConversaoCast
             int value1 = Convert.ToInt32(1.5m); // casting rounds up
             Console.WriteLine(value1); */
 
-            string value = "102";
+            string value = "bad";
             int result = 0;
 
             if (int.TryParse(value, out result))
@@ -81,6 +81,8 @@ namespace ConversaoCast
             {
                 Console.WriteLine("Não foi possível exibir o resultado.");
             }
+
+            Console.WriteLine($"Resultado (c/ desvio): {50 + result}");
 
             Console.ReadKey();
         }
