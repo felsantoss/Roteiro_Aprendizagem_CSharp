@@ -11,10 +11,16 @@ namespace ConversaoCast
         static void Main(string[] args)
         {
 
-            int first = 2;
+            /* int first = 2;
             string second = "4";
-            int result = first + second;
-            Console.WriteLine(result);
+            string result = first + second;
+            Console.WriteLine(result); */
+
+            int myInt = 3;
+            Console.WriteLine($"int: {myInt}");
+
+            decimal myDecimal = myInt;
+            Console.WriteLine($"decimal: {myDecimal}");
 
             Console.ReadKey();
         }
