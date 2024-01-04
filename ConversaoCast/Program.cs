@@ -62,14 +62,25 @@ namespace ConversaoCast
             string value1 = "5";
             string value2 = "7";
             int result = Convert.ToInt32(value1) * Convert.ToInt32(value2);
-            Console.WriteLine(result); */
+            Console.WriteLine(result); 
 
             int value = (int)1.5m; // casting truncates
             Console.WriteLine(value);
 
             int value1 = Convert.ToInt32(1.5m); // casting rounds up
-            Console.WriteLine(value1);
+            Console.WriteLine(value1); */
 
+            string value = "102";
+            int result = 0;
+
+            if (int.TryParse(value, out result))
+            {
+                Console.WriteLine($"Resultado: {result}");
+            }
+            else
+            {
+                Console.WriteLine("Não foi possível exibir o resultado.");
+            }
 
             Console.ReadKey();
         }
