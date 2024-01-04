@@ -68,7 +68,7 @@ namespace ConversaoCast
             Console.WriteLine(value);
 
             int value1 = Convert.ToInt32(1.5m); // casting rounds up
-            Console.WriteLine(value1); */
+            Console.WriteLine(value1); 
 
             string value = "bad";
             int result = 0;
@@ -82,7 +82,29 @@ namespace ConversaoCast
                 Console.WriteLine("Não foi possível exibir o resultado.");
             }
 
-            Console.WriteLine($"Resultado (c/ desvio): {50 + result}");
+            if (result > 0)
+                Console.WriteLine($"Resultado (c/ desvio): {50 + result}"); */
+
+            string[] values = { "12.3", "45", "ABC", "11", "DEF" };
+
+            decimal total = 0m;
+            string message = "";
+
+            foreach (var value in values)
+            {
+                decimal number; // stores the TryParse "out" value
+                if (decimal.TryParse(value, out number))
+                {
+                    total += number;
+                }
+                else
+                {
+                    message += value;
+                }
+            }
+
+            Console.WriteLine($"Message: {message}");
+            Console.WriteLine($"Total: {total}");
 
             Console.ReadKey();
         }
