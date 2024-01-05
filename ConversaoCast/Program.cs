@@ -12,7 +12,7 @@ namespace ConversaoCast
         static void Main(string[] args)
         {
 
-            /* int first = 2;
+             int first = 2;
             string second = "4";
             string result = first + second;
             Console.WriteLine(result); 
@@ -25,32 +25,32 @@ namespace ConversaoCast
 
 
             Console.WriteLine("\nConversão por Coerção");
-            decimal myDecimal = 3.14m;
-            Console.WriteLine($"decimal: {myDecimal}");
+            decimal myDecimals = 3.14m;
+            Console.WriteLine($"decimal: {myDecimals}");
 
-            int myInt = (int)myDecimal; // conversão feita por Coerção, colocando () ao lado da variavel
-            Console.WriteLine($"int: {myInt}"); 
+            int myInts = (int)myDecimals; // conversão feita por Coerção, colocando () ao lado da variavel
+            Console.WriteLine($"int: {myInts}"); 
 
 
             Console.WriteLine("\nconversão de Restrição"); // você pode perder informações como precisão (ou seja, o número de valores após o ponto decimal).
-            decimal myDecimal = 1.23456789m;
-            float myFloat = (float)myDecimal;
+            decimal myDecimalss = 1.23456789m;
+            float myFloat = (float)myDecimalss;
 
-            Console.WriteLine($"Decimal: {myDecimal}");
+            Console.WriteLine($"Decimal: {myDecimalss}");
             Console.WriteLine($"Float  : {myFloat}"); 
 
             Console.WriteLine("\nConvertendo número para String usando ToString()");
-            int first = 5;
-            int second = 7;
-            string message = first.ToString() + second.ToString();
+            int firstA = 5;
+            int secondA = 7;
+            string message = firstA.ToString() + secondA.ToString();
 
             Console.WriteLine(message); 
 
             Console.WriteLine("\nConvertendo String em Int usando Parse()");
-            string first = "5";
-            string second = "7";
-            int sum = int.Parse(first) + int.Parse(second);
-            Console.WriteLine(sum); */
+            string firstT = "5";
+            string secondD = "7";
+            int sum = int.Parse(firstT) + int.Parse(secondD);
+            Console.WriteLine(sum); 
 
             /* Você usou o método Convert.ToInt32() com uma cadeia de caracteres aqui, 
              * mas provavelmente deve usar TryParse() quando possível.
@@ -58,42 +58,42 @@ namespace ConversaoCast
              * porque os arredonda da maneira esperada.
              */
 
-            /* Console.WriteLine("\nConversão utilizando a classe Convert");
+             Console.WriteLine("\nConversão utilizando a classe Convert");
             string value1 = "5";
             string value2 = "7";
-            int result = Convert.ToInt32(value1) * Convert.ToInt32(value2);
-            Console.WriteLine(result); 
+            int resultsS = Convert.ToInt32(value1) * Convert.ToInt32(value2);
+            Console.WriteLine(resultsS); 
 
             int value = (int)1.5m; // casting truncates
             Console.WriteLine(value);
 
-            int value1 = Convert.ToInt32(1.5m); // casting rounds up
-            Console.WriteLine(value1); 
+            int value11 = Convert.ToInt32(1.5m); // casting rounds up
+            Console.WriteLine(value11); 
 
-            string value = "bad";
-            int result = 0;
+            string valuess = "bad";
+            int resultss = 0;
 
-            if (int.TryParse(value, out result))
+            if (int.TryParse(valuess, out resultss))
             {
-                Console.WriteLine($"Resultado: {result}");
+                Console.WriteLine($"Resultado: {resultss}");
             }
             else
             {
                 Console.WriteLine("Não foi possível exibir o resultado.");
             }
 
-            if (result > 0)
-                Console.WriteLine($"Resultado (c/ desvio): {50 + result}"); */
+            if (resultss > 0)
+                Console.WriteLine($"Resultado (c/ desvio): {50 + resultss}"); 
 
-            /* string[] values = { "12.3", "45", "ABC", "11", "DEF" };
+            string[] valuesT = { "12.3", "45", "ABC", "11", "DEF" };
 
             decimal total = 0m;
-            string message = "";
+            string messagee = "";
 
-            foreach (var value in values)
+            foreach (var valueE in valuesT)
             {
                 decimal number; // stores the TryParse "out" value
-                if (decimal.TryParse(value, out number))
+                if (decimal.TryParse(valueE, out number))
                 {
                     total += number;
                 }
@@ -104,21 +104,21 @@ namespace ConversaoCast
             }
 
             Console.WriteLine($"Message: {message}");
-            Console.WriteLine($"Total: {total}"); */
+            Console.WriteLine($"Total: {total}"); 
 
-            int value1 = 12;
-            decimal value2 = 6.2m;
-            float value3 = 4.3f;
+            int value111 = 12;
+            decimal value22 = 6.2m;
+            float value33 = 4.3f;
 
 
-            int result1 = Convert.ToInt32(value1 / value2);
+            int result1 = Convert.ToInt32(value111 / value22);
             // Hint: You need to round the result to nearest integer (don't just truncate)
             Console.WriteLine($"Divide value1 by value2, display the result as an int: {result1}");
 
-            decimal result2 = value2 / (decimal)value3;
+            decimal result2 = value22 / (decimal)value33;
             Console.WriteLine($"Divide value2 by value3, display the result as a decimal: {result2}");
 
-            float result3 = value3 / (float)value1;
+            float result3 = value33 / (float)value111;
             Console.WriteLine($"Divide value3 by value1, display the result as a float: {result3}");
 
             Console.ReadKey();  

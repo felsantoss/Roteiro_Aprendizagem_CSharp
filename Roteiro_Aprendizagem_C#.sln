@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MiniProject", "MiniProject"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetosGuiado", "ProjetosGuiado\ProjetosGuiado.csproj", "{B102D2C5-FB3D-4364-9B23-D85F06E3BC5F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Roteiro Aprendizarem C# Parte 2", "Roteiro Aprendizarem C# Parte 2", "{554A395A-9520-4B5D-94E0-B80681B6CCA8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Roteiro Aprendizagem C# Parte 2", "Roteiro Aprendizagem C# Parte 2", "{554A395A-9520-4B5D-94E0-B80681B6CCA8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roteiro Parte 2", "Roteiro Parte 2\Roteiro Parte 2.csproj", "{C83D4D27-E196-4DA6-A278-C9D068A78049}"
 EndProject
@@ -54,6 +54,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Duplicate Zeros", "Duplicate Zeros", "{EC05637A-AB41-435D-9048-F0E61CF2670E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuplicateZeros", "DuplicateZeros\DuplicateZeros.csproj", "{D2357599-B02B-4D94-93B9-15AFA3F08965}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parte 3", "Parte 3", "{9D1A2AA1-23DD-4B92-A0E2-BBF1CE0602A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,6 +133,7 @@ Global
 		{145981AC-8EB6-4921-8E99-161EB9AE3DB1} = {7372E689-87EC-4C09-AAC3-95A586C7C13F}
 		{EC05637A-AB41-435D-9048-F0E61CF2670E} = {91B7C598-6F30-45BE-964D-7F13565B0F06}
 		{D2357599-B02B-4D94-93B9-15AFA3F08965} = {EC05637A-AB41-435D-9048-F0E61CF2670E}
+		{9D1A2AA1-23DD-4B92-A0E2-BBF1CE0602A6} = {ABD3E81E-38B9-44F3-B53F-053FD8BC51CB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {652280E7-4E9C-4110-BD5B-351BF708D9EF}
