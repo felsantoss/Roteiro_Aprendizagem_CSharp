@@ -20,6 +20,14 @@ namespace OperacoesComMatrizes
                 Console.WriteLine($"-- {pallet}");
             }
 
+            Console.WriteLine("\nReversed...");
+            Array.Reverse(pallets);
+
+            foreach (var pallet in pallets)
+            {
+                Console.WriteLine($"-- {pallet}");
+            }
+
             Console.ReadKey();
         }
     }
