@@ -40,11 +40,11 @@ namespace OperacoesComMatrizes
                 Console.WriteLine($"-- {pallet}");
             }
 
-            Array.Resize(ref pallets, 6); // altera o tamanho de uma matriz para o tamanho especificado
+            Array.Resize(ref pallets, 3); // altera o tamanho de uma matriz para o tamanho especificado
             Console.WriteLine($"\nResizing 6 ... count: {pallets.Length}");
 
-            pallets[4] = "C01";
-            pallets[5] = "C02";
+            // pallets[4] = "C01";
+            // pallets[5] = "C02";
 
             foreach (var pallet in pallets)
             {
