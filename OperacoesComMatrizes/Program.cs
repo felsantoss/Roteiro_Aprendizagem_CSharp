@@ -57,7 +57,8 @@ namespace OperacoesComMatrizes
             char[] valueArray = value.ToCharArray();
             Array.Reverse(valueArray);
 
-            string result = new string(valueArray);
+            // string result = new string(valueArray);
+            string result = String.Join(",", valueArray); // Join() concatena os itens com um separador especificado
             Console.WriteLine(result);
 
             Console.ReadKey();
