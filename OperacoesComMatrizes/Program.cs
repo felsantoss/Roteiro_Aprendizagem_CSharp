@@ -61,6 +61,12 @@ namespace OperacoesComMatrizes
             string result = String.Join(",", valueArray); // Join() concatena os itens com um separador especificado
             Console.WriteLine(result);
 
+            string[] items = result.Split(',');
+            foreach (string item in items)
+            {
+                Console.WriteLine(item);
+            }
+
             Console.ReadKey();
         }
     }
