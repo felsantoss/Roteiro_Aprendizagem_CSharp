@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace OperacoesComMatrizes
@@ -51,8 +52,6 @@ namespace OperacoesComMatrizes
                 Console.WriteLine($"-- {pallet}");
             }
 
-            Console.Clear();
-
             string value = "abc123";
             char[] valueArray = value.ToCharArray();
             Array.Reverse(valueArray);
@@ -66,6 +65,30 @@ namespace OperacoesComMatrizes
             {
                 Console.WriteLine(item);
             }
+
+            Console.Clear();
+
+            string pangram = "The quick brown fox jumps over the lazy dog";
+            string[] words = pangram.Split(' '); // cada palavra da string virou um elemento de array
+
+            string concatArray = String.Join(" ", words);
+
+            int lengthOfWords = words.Length;
+
+            Console.WriteLine($"Length elements words: {lengthOfWords}");
+
+            Console.WriteLine(concatArray);
+
+            char[] charContatArray = concatArray.ToCharArray();
+            Array.Reverse(charContatArray);
+
+            int lengthOfChar = charContatArray.Length;
+
+            Console.WriteLine($"Length of char: {lengthOfChar}");
+
+            string charJoin = String.Join("", charContatArray);
+
+            Console.WriteLine(charJoin);
 
             Console.ReadKey();
         }
