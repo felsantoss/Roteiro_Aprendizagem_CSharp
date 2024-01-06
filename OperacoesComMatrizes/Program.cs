@@ -66,7 +66,7 @@ namespace OperacoesComMatrizes
                 Console.WriteLine(item);
             }
 
-            Console.Clear();
+            // Desafio
 
             string pangram = "The quick brown fox jumps over the lazy dog";
 
@@ -88,7 +88,21 @@ namespace OperacoesComMatrizes
             string finalResult = String.Join(" ", newMessage);
             Console.WriteLine(finalResult);
 
+            Console.Clear();
 
+            string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
+            string[] ordersSeparate = orderStream.Split(',');
+            Array.Sort(ordersSeparate);
+
+            foreach (var order in ordersSeparate)
+            {
+                if (order.Length == 4)
+                    Console.WriteLine(order);
+
+                else
+                    Console.WriteLine($"{order} - Error");
+            }
+        
             Console.ReadKey();
         }
     }
