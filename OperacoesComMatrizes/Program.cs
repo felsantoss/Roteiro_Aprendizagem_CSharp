@@ -69,26 +69,25 @@ namespace OperacoesComMatrizes
             Console.Clear();
 
             string pangram = "The quick brown fox jumps over the lazy dog";
-            string[] words = pangram.Split(' '); // cada palavra da string virou um elemento de array
 
-            string concatArray = String.Join(" ", words);
+            // Step 1
+            string[] message = pangram.Split(' ');
 
-            int lengthOfWords = words.Length;
+            //Step 2
+            string[] newMessage = new string[message.Length];
 
-            Console.WriteLine($"Length elements words: {lengthOfWords}");
+            // Step 3
+            for (int i = 0; i < message.Length; i++)
+            {
+                char[] letters = message[i].ToCharArray();
+                Array.Reverse(letters);
+                newMessage[i] = new string(letters);
+            }
 
-            Console.WriteLine(concatArray);
+            //Step 4
+            string finalResult = String.Join(" ", newMessage);
+            Console.WriteLine(finalResult);
 
-            char[] charContatArray = concatArray.ToCharArray();
-            Array.Reverse(charContatArray);
-
-            int lengthOfChar = charContatArray.Length;
-
-            Console.WriteLine($"Length of char: {lengthOfChar}");
-
-            string charJoin = String.Join("", charContatArray);
-
-            Console.WriteLine(charJoin);
 
             Console.ReadKey();
         }
