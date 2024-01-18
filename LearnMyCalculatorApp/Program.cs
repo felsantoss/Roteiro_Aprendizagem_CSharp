@@ -10,6 +10,7 @@ namespace LearnMyCalculatorApp
     {
         static void Main(string[] args)
         {
+            Console.ReadKey();  
         }
     }
 }

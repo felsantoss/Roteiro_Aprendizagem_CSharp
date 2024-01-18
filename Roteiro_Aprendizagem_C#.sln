@@ -67,7 +67,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TesteUnitario", "TesteUnita
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnMyCalculatorApp", "LearnMyCalculatorApp\LearnMyCalculatorApp.csproj", "{32DD10E3-1767-47C5-9CEC-EB4C0B1E1C63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnMyCalculatorApp.Test", "LearnMyCalculatorApp.Test\LearnMyCalculatorApp.Test.csproj", "{236D5BDC-2426-421F-8476-5A9000BC47CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnMyCalculatorApp.Test", "LearnMyCalculatorApp.Test\LearnMyCalculatorApp.Test.csproj", "{236D5BDC-2426-421F-8476-5A9000BC47CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API Minima", "API Minima", "{CEEBA1E3-663C-4D84-B100-F127324A8790}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parte 4", "Parte 4", "{5CCE70A2-130B-4BD8-93AB-9B6F60AD6D77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormatarDadosAlfanumericos", "FormatarDadosAlfanumericos\FormatarDadosAlfanumericos.csproj", "{2161299D-42CE-49B0-B5A8-CDDBBBD56FDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +141,10 @@ Global
 		{236D5BDC-2426-421F-8476-5A9000BC47CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{236D5BDC-2426-421F-8476-5A9000BC47CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{236D5BDC-2426-421F-8476-5A9000BC47CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2161299D-42CE-49B0-B5A8-CDDBBBD56FDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2161299D-42CE-49B0-B5A8-CDDBBBD56FDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2161299D-42CE-49B0-B5A8-CDDBBBD56FDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2161299D-42CE-49B0-B5A8-CDDBBBD56FDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -167,6 +177,8 @@ Global
 		{0F8879A1-BDBD-4D37-BB7B-214C9FE31490} = {73A249D1-8738-4530-8A93-A2F151E15475}
 		{32DD10E3-1767-47C5-9CEC-EB4C0B1E1C63} = {087307C8-2A77-49D6-862E-984F920C4287}
 		{236D5BDC-2426-421F-8476-5A9000BC47CB} = {087307C8-2A77-49D6-862E-984F920C4287}
+		{5CCE70A2-130B-4BD8-93AB-9B6F60AD6D77} = {ABD3E81E-38B9-44F3-B53F-053FD8BC51CB}
+		{2161299D-42CE-49B0-B5A8-CDDBBBD56FDD} = {5CCE70A2-130B-4BD8-93AB-9B6F60AD6D77}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {652280E7-4E9C-4110-BD5B-351BF708D9EF}
