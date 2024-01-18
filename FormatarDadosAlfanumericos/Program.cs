@@ -17,3 +17,13 @@ Console.WriteLine($"\nMeasurement: {measurement:N} units");
 // Formatação de percentual 
 decimal tax = .36785m;
 Console.WriteLine($"Tax rate: {tax:P2}");
+
+// Combinando formatação
+decimal priceReal = 67.55m;
+decimal salePrice = 59.99m;
+
+string yourDiscount = String.Format("You saved {0:C2} off the regular {1:C2} price. ", (priceReal - salePrice), priceReal);
+
+Console.WriteLine(yourDiscount);
+
+Console.ReadKey();
