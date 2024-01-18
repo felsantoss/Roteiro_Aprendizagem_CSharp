@@ -13,3 +13,7 @@ Console.WriteLine($"\nPrice: {price:C} (Save: {discount:C})");
 // Formatação de números
 decimal measurement = 123456.78912m;
 Console.WriteLine($"\nMeasurement: {measurement:N} units");
+
+// Formatação de percentual 
+decimal tax = .36785m;
+Console.WriteLine($"Tax rate: {tax:P2}");
