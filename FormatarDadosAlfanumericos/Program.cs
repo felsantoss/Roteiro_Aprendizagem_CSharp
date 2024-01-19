@@ -39,4 +39,7 @@ Console.WriteLine($"Sub total: {subtotal:C}");
 Console.WriteLine($"Tax: {taxPercentage:P2}");
 Console.WriteLine($"Total billed: {total:C}");
 
+string input = "Pad this";
+Console.WriteLine(input.PadLeft(12));
+
 Console.ReadKey();
