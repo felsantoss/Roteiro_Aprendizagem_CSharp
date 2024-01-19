@@ -25,7 +25,7 @@ decimal salePrice = 59.99m;
 
 string yourDiscount = String.Format("You saved {0:C2} off the regular {1:C2} price. ", (priceReal - salePrice), priceReal);
 
-Console.WriteLine(yourDiscount); */
+Console.WriteLine(yourDiscount); 
 
 int invoiceNumber = 1201;
 decimal productShares = 25.4568m;
@@ -40,6 +40,18 @@ Console.WriteLine($"Tax: {taxPercentage:P2}");
 Console.WriteLine($"Total billed: {total:C}");
 
 string input = "Pad this";
-Console.WriteLine(input.PadLeft(12));
+Console.WriteLine(input.PadLeft(12, '-'));
+Console.WriteLine(input.PadRight(12, '-')); */
+
+string paymentId = "769C";
+string payeeName = "Mr. Felipe Santos";
+string paymentAmount = "R$ 5000,00";
+
+var formattedLine = paymentId.PadRight(6);
+formattedLine += payeeName.PadRight(24);
+formattedLine += paymentAmount.PadLeft(10);
+
+Console.WriteLine("1234567890123456789012345678901234567890");
+Console.WriteLine(formattedLine);
 
 Console.ReadKey();
