@@ -1,10 +1,9 @@
-﻿string message = "Find what is (inside the parentheses)";
+﻿string message = "What is the value <span>between the tags</span>";
 
-int openingPosition = message.IndexOf('(');
-int closingPosition = message.IndexOf(')');
+int openingPosition = message.IndexOf("<span>");
+int closingPosition = message.IndexOf("</span>");
 
-openingPosition += 1; // ignorando o caractere de abertura 
-
+openingPosition += 6;
 int length = closingPosition - openingPosition;
 
 Console.WriteLine(message.Substring(openingPosition, length));
