@@ -26,7 +26,7 @@ while (true)
     Console.WriteLine(message.Substring(openingPosition, length));
 
     message = message.Substring(closingPosition + 1);
-} */
+} 
 
 string message = "(What if) I have [different symbols] but every {open symbol} needs a [matching closing symbol]?";
 
@@ -76,7 +76,12 @@ while (true)
     // Finally, use the techniques you've already learned to display the sub-string:
 
     int length = closingPosition - openingPosition;
-    Console.WriteLine(message.Substring(openingPosition, length));
-}
+    Console.WriteLine(message.Substring(openingPosition, length)); 
+} */
+
+string data = "12345John Smith          5000  3  ";
+
+string updateData = data.Remove(5, 20);
+Console.WriteLine(updateData);
 
 Console.ReadKey();
